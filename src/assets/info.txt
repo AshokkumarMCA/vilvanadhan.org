@@ -1,0 +1,2 @@
+need to upload "background.png"
+"Shiva.png', 'Parvati.png', 'Ganesha.png', 'Kartikeya.png'"
