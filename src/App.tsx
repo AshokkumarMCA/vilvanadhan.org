@@ -26,16 +26,16 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-amber-200 text-orange-900 dark:bg-white dark:text-white" style={{backgroundImage:"url("+{imagePath}+")"}}>
+    <div className="bg-amber-200 text-orange-900 dark:bg-white dark:text-white" style={{backgroundImage:"url('./images/background.png')"}}>
       {/* Fixed Header */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-teal-100/95 shadow-md py-2' : 'bg-transparent py-4'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <ShivaLogo />
           <div className="flex flex-col items-center">
-          <h1 className="text-2xl md:text-3xl font-serif text-orange-800">Sri Vilvanadha Ishwarar Temple</h1>
-            <h2 className="text-2xl md:text-3xl font-serif text-orange-800">श्री शिव मंदिर</h2>
+          <h1 className="text-2xl md:text-3xl font-serif text-orange-800">ஸ்ரீ வில்வநாதீஸ்வரர் திருக்கோவில்</h1>
+            <h2 className="text-2xl md:text-3xl font-serif text-orange-800">Sri Vilvanadha Ishwarar Temple</h2>
             <h2 className="text-lg md:text-xl font-serif italic text-orange-600">Kilvillivalam</h2>
-          </div>
+          </div>x 
           <ShivaLogo />
         </div>
         <Nav/>  
@@ -43,7 +43,7 @@ function App() {
 
       {/* Main Content with Emerald Green Shiva Background */}
       <main className="pt-32" style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),url(${imagePath})`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),url('./images/background.png')`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
@@ -130,9 +130,9 @@ function App() {
                   className="text-center"
                 >
                   <div className="bg-white p-4 rounded-lg shadow-md">
-                    <div className="aspect-square bg-amber-100 rounded-lg mb-3 flex items-center justify-center">
-                      {/* <span className="text-6xl text-orange-800">{deity.charAt(0)}</span> */}
-                      <img height={100} width={50} src={"./assets"+{deity}+".png"} alt={deity} />
+                    <div className="aspect-square bg-amber-100 rounded-lg mb-3 flex  justify-center">
+                      
+                      <img height={100} width={50} src={"./images/"+{deity}+".png"} alt={deity} />
                     </div>
                     <h3 className="text-xl font-medium">{deity}</h3>
                   </div>
@@ -217,11 +217,11 @@ function App() {
             <div className="max-w-3xl mx-auto">
               {[
                 {
-                  name: 'Rajesh Kumar',
+                  name: 'Praveenkumar',
                   text: 'The spiritual guidance I received here transformed my life completely. The peaceful environment helps in connecting with the divine.'
                 },
                 {
-                  name: 'Ananya Sharma',
+                  name: 'Rakesh Kumar',
                   text: 'The temple has become my second home. The priest\'s knowledge and the community spirit make this place special.'
                 },
                 {
