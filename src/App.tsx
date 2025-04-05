@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './App.css'
 import Nav from './components/navigation/Nav';
-import imagePath from './assets/background.png';
 
 // Import your actual logo images when available
 export const ShivaLogo = () => (
