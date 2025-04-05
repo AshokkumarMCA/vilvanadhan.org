@@ -34,7 +34,7 @@ function App() {
           <h1 className="text-2xl md:text-3xl font-serif text-orange-800">ஸ்ரீ வில்வநாதீஸ்வரர் திருக்கோவில்</h1>
             <h2 className="text-2xl md:text-3xl font-serif text-orange-800">Sri Vilvanadha Ishwarar Temple</h2>
             <h2 className="text-lg md:text-xl font-serif italic text-orange-600">Kilvillivalam</h2>
-          </div>x 
+          </div>
           <ShivaLogo />
         </div>
         <Nav/>  
@@ -131,7 +131,7 @@ function App() {
                   <div className="bg-white p-4 rounded-lg shadow-md">
                     <div className="aspect-square bg-amber-100 rounded-lg mb-3 flex  justify-center">
                       
-                    <img src={`./images/${deity}.png`} alt={deity} />
+                      <img src={`./images/${deity}.png`} alt={deity} />
                     </div>
                     <h3 className="text-xl font-medium">{deity}</h3>
                   </div>
