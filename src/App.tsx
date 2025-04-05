@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="bg-amber-200 text-orange-900 dark:bg-white dark:text-white" style={{backgroundImage:"url('./images/background.png')"}}>
       {/* Fixed Header */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-900 shadow-md py-2' : 'bg-transparent py-2'}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-800 shadow-md py-2' : 'bg-transparent py-2'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <ShivaLogo />
           <div className="flex flex-col items-center">
