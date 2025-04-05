@@ -318,15 +318,15 @@ function App() {
                 <div className="space-y-4">
                   <p className="flex items-center">
                     <span className="mr-3">📍</span>
-                    123 Divine Path, Spiritual District, City
+                     Kilvillivalam to Thunayambattu Road, Vandavasi, Thiruvannamalai District - 604 408.
                   </p>
                   <p className="flex items-center">
                     <span className="mr-3">☎️</span>
-                    +1 234 567 8900
+                    +91 75581 10667
                   </p>
                   <p className="flex items-center">
                     <span className="mr-3">✉️</span>
-                    info@shivatemple.com
+                    shreevilvanathaeeshwararcharit@gmail.com
                   </p>
                   <div>
                     <h4 className="font-medium mb-2">Opening Hours:</h4>
@@ -414,7 +414,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-orange-800 text-center">
-            <p>&copy; {new Date().getFullYear()} Shri Shiva Temple. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Shri Vilvandheeshwarar.org All rights reserved.</p>
           </div>
         </div>
       </footer>
