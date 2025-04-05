@@ -131,7 +131,7 @@ function App() {
                   <div className="bg-white p-4 rounded-lg shadow-md">
                     <div className="aspect-square bg-amber-100 rounded-lg mb-3 flex  justify-center">
                       
-                      <img height={100} width={50} src={`./images/${deity}.png`} alt={deity} />
+                    <img src={`./images/${deity}.png`} alt={deity} />
                     </div>
                     <h3 className="text-xl font-medium">{deity}</h3>
                   </div>
