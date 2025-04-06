@@ -313,7 +313,8 @@ function App() {
                 <div className="space-y-4">
                   <p className="flex items-center">
                     <span className="mr-3">📍</span>
-                     Kilvillivalam to Thunayambattu Road, Vandavasi, Thiruvannamalai District - 604 408.
+                    கீழ்வில்லிவலம் - துணையம்பட்டு சாலை, கீழ்வில்லிவலம் கிராமம், வந்தவாசி, திருவண்ணாமலை மாவட்டம்.
+                     Kilvillivalam to Thunayambattu Road, Kilvillivalam Village, Vandavasi, Thiruvannamalai District - 604 408.
                   </p>
                   <p className="flex items-center">
                     <span className="mr-3">☎️</span>
