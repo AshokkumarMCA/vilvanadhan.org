@@ -155,9 +155,9 @@ function App() {
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { name: 'Shiva Ratri Celebration', date: '12/05/2025' },
-                { name: 'Ganesh Chaturthi', date: '22/08/2025' },
-                { name: 'Navratri Festival', date: '05/10/2025' }
+                { name: 'பிரதோஷ பூஜை (Pradosha Pooja)', date: '10/04/2025' },
+                { name: 'பௌர்ணமி பூஜை (Pournami Pooja)', date: '12/04/2025' }
+            
               ].map((event, index) => (
                 <motion.div 
                   key={event.name}
