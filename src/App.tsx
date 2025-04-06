@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="bg-amber-200 text-orange-900 dark:bg-white dark:text-white" style={{backgroundImage:"url('./images/background.png')"}}>
       {/* Fixed Header */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-emerald-800 shadow-md py-2' : 'bg-transparent py-2'}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-orange-100/95 shadow-md py-2' : 'bg-transparent py-2'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <ShivaLogo />
           <div className="flex flex-col items-center">
@@ -42,7 +42,7 @@ function App() {
 
       {/* Main Content with Emerald Green Shiva Background */}
       <main className="pt-32" style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)),url('./images/background.png')`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)),url('./images/background.png')`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
@@ -55,7 +55,7 @@ function App() {
             transition={{ duration: 1 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-serif mb-6">PRAYER IS THE KEY TO HEAVEN</h1>
+            <h1 className="text-4xl md:text-6xl font-serif mb-6 text-blue-400">PRAYER IS THE KEY TO HEAVEN</h1>
             <div className="flex flex-wrap justify-center gap-4">
               <motion.button 
                 whileHover={{ scale: 1.05 }}
@@ -79,7 +79,7 @@ function App() {
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1 }}
               viewport={{ once: true }}
               className="text-3xl font-serif text-center mb-12"
             >
@@ -91,7 +91,7 @@ function App() {
                   key={item}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: item * 0.1 }}
+                  transition={{ duration: 1, delay: item * 0.2 }}
                   viewport={{ once: true }}
                   className="text-center bg-white p-6 rounded-lg shadow-lg"
                 >
@@ -112,9 +112,9 @@ function App() {
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1.5 }}
               viewport={{ once: true }}
-              className="text-3xl font-serif text-center mb-12"
+              className="text-3xl font-serif text-center mb-12 text-orange-600"
             >
               Main Deities
             </motion.h2>
@@ -178,13 +178,13 @@ function App() {
 
         {/* Join Us Section */}
         <section className="py-24">
-          <div className="container mx-auto text-center">
+          <div className="container mx-auto text-center ">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-3xl font-serif mb-12"
+              className="text-3xl font-serif mb-12 text-orange-400"
             >
               Join Us in Prayer
             </motion.h2>
@@ -202,14 +202,14 @@ function App() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-24 bg-orange-50">
+        <section className="py-12 bg-orange-50 text-blue-600">
           <div className="container mx-auto">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="text-3xl font-serif text-center mb-12"
+              className="text-3xl font-serif text-center mb-6"
             >
               Testimonials
             </motion.h2>
@@ -221,10 +221,6 @@ function App() {
                 },
                 {
                   name: 'Rakesh Kumar',
-                  text: 'The temple has become my second home. The priest\'s knowledge and the community spirit make this place special.'
-                },
-                {
-                  name: 'Ananya Sharma',
                   text: 'The temple has become my second home. The priest\'s knowledge and the community spirit make this place special.'
                 }
               ].map((testimonial, index) => (
@@ -251,7 +247,7 @@ function App() {
 
         {/* News & Blogs Section */}
         <section className="py-24">
-          <div className="container mx-auto">
+          <div className="container mx-auto text-yellow-300">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -344,14 +340,14 @@ function App() {
                 <h3 className="text-2xl mb-4">Send a Message</h3>
                 <form className="space-y-4 bg-gray-300" style={{borderRadius:5,marginRight:100}}>
                   <div>
-                    <input 
+                    <input required
                       type="text" 
                       placeholder="Your Name" 
                       className="w-full p-3 rounded-lg text-orange-900"
                     />
                   </div>
                   <div>
-                    <input 
+                    <input required
                       type="email" 
                       placeholder="Your Email" 
                       className="w-full p-3 rounded-lg text-orange-900"
