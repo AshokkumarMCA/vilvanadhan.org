@@ -2,7 +2,7 @@
 const Nav:React.FC=()=>{
 
     return(<>
-     <nav className="text-white mt-2">
+     <nav className="bg-teal-500 text-white mt-2 hover:bg-orange-100">
           <div className="container mx-auto">
             <ul className="flex justify-end space-x-8 py-3">
               <li><a href="#home" className="hover:text-teal-300 transition-colors">Home</a></li>
