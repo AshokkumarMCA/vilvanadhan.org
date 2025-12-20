@@ -1,0 +1,9 @@
+export { HeroSection } from './HeroSection';
+export { ServicesSection } from './ServicesSection';
+export { DeitiesSection } from './DeitiesSection';
+export { EventsSection } from './EventsSection';
+export { GallerySection } from './GallerySection';
+export { JoinUsSection } from './JoinUsSection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { BlogSection } from './BlogSection';
+export { ContactSection } from './ContactSection';

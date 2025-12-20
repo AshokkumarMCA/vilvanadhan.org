@@ -1,0 +1,13 @@
+# robots.txt for Sri Vilvanadha Ishwarar Temple Website
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://vilvanadhan.org/sitemap.xml
+
+# Crawl-delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Disallow admin or sensitive paths (if any in future)
+# Disallow: /admin/
