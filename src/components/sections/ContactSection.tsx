@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { SectionTitle, Input, TextArea, Button } from '../ui';
 import { useForm } from '../../hooks';
 import { TEMPLE_INFO } from '../../constants/content';
@@ -34,12 +35,30 @@ export const ContactSection = () => {
 
   const handleFormSubmit = async (values: ContactFormData) => {
     try {
-      // TODO: Replace with actual API call
-      // For now, we'll simulate a successful submission
-      console.log('Form submitted:', values);
+      // EmailJS configuration from environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (!serviceId || !templateId || !publicKey) {
+        console.error('EmailJS configuration is missing. Please check your .env file.');
+        setSubmitStatus('error');
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+        return;
+      }
+
+      // Send email using EmailJS
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: values.name,
+          from_email: values.email,
+          message: values.message,
+          to_name: 'Temple Administrator',
+        },
+        publicKey
+      );
 
       setSubmitStatus('success');
       setTimeout(() => setSubmitStatus('idle'), 5000);
