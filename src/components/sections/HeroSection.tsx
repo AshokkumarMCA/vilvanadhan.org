@@ -48,7 +48,7 @@ export const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Main Heading */}
+        {/* Main Heading - SEO Optimized with Keywords */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,9 +56,23 @@ export const HeroSection = () => {
           className="text-4xl md:text-6xl lg:text-7xl font-serif mb-6 leading-tight"
         >
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-600 bg-clip-text text-transparent drop-shadow-lg font-bold">
-            PRAYER IS THE KEY TO HEAVEN
+            Sri Vilvanadha Ishwarar Temple
+          </span>
+          <br />
+          <span className="text-2xl md:text-3xl lg:text-4xl text-orange-700 font-medium">
+            Kilvillivalam, Vandavasi - Ancient Shiva Temple Reconstruction
           </span>
         </motion.h1>
+
+        {/* Inspirational Quote Moved to Subtitle */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-xl md:text-2xl text-orange-800 mb-2 font-serif italic"
+        >
+          "Prayer is the Key to Heaven"
+        </motion.p>
 
         {/* Subtitle */}
         <motion.p
@@ -76,8 +90,10 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-lg md:text-xl text-white drop-shadow-lg mb-12 max-w-3xl mx-auto leading-relaxed font-medium"
         >
-          Welcome to the sacred revival of an ancient shrine. Join us in rebuilding
-          this historic temple and restoring its divine glory for generations to come.
+          Welcome to the sacred revival of this ancient Shiva temple in Kilvillivalam Village,
+          Vandavasi, Thiruvannamalai District. Join us in rebuilding this historic Hindu temple
+          and restoring its divine glory for generations to come. Daily puja services, Pradosha
+          Pooja, and Pournami worship available.
         </motion.p>
 
         {/* Call-to-Action Buttons */}

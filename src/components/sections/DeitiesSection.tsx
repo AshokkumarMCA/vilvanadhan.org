@@ -6,7 +6,7 @@ export const DeitiesSection = () => {
   return (
     <section id="deities" className="py-24 bg-amber-100 text-orange-300">
       <div className="container mx-auto px-4">
-        <SectionTitle className="text-orange-600">Main Deities</SectionTitle>
+        <SectionTitle className="text-orange-600">Main Deities at Vilvanadha Ishwarar Temple</SectionTitle>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {DEITIES.map((deity, index) => (
             <motion.div

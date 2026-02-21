@@ -7,10 +7,60 @@ export const EventsSection = () => {
   // Get fresh events every time component renders
   const events = useMemo(() => getEvents(), []);
 
+  // Generate Event schema for each event
+  const eventSchemas = useMemo(() => {
+    return events.map((event) => {
+      // Parse the date string (DD/MM/YYYY)
+      const [day, month, year] = event.date.split('/').map(Number);
+      const eventDate = new Date(year, month - 1, day);
+      const eventEndDate = new Date(eventDate);
+      eventEndDate.setHours(21, 0, 0, 0); // Event ends at 9 PM
+
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Event',
+        name: event.name,
+        alternateName: event.nameTamil,
+        description: event.description,
+        startDate: eventDate.toISOString(),
+        endDate: eventEndDate.toISOString(),
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        location: {
+          '@type': 'HinduTemple',
+          name: 'Sri Vilvanadha Ishwarar Temple',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Kilvillivalam to Thunayambattu Road, Kilvillivalam Village',
+            addressLocality: 'Vandavasi',
+            addressRegion: 'Tamil Nadu',
+            addressCountry: 'IN',
+            postalCode: '604408',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: '12.442529',
+            longitude: '79.623604',
+          },
+        },
+        organizer: {
+          '@type': 'Organization',
+          name: 'Sri Vilvanadha Ishwarar Temple',
+          url: 'https://vilvanadhan.org',
+        },
+        performer: {
+          '@type': 'Organization',
+          name: 'Temple Priests',
+        },
+        isAccessibleForFree: true,
+      };
+    });
+  }, [events]);
+
   return (
     <section id="events" className="py-24 bg-orange-200 text-orange-600">
       <div className="container mx-auto px-4">
-        <SectionTitle>Upcoming Events</SectionTitle>
+        <SectionTitle>Upcoming Temple Events & Pradosha Pooja</SectionTitle>
         <p className="text-center text-orange-700 mb-8 text-sm">
           🌙 Dates are automatically updated based on the lunar calendar
         </p>
@@ -64,6 +114,17 @@ export const EventsSection = () => {
           })}
         </div>
       </div>
+
+      {/* Event Schema Markup */}
+      {eventSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      ))}
     </section>
   );
 };

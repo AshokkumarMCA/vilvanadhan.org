@@ -157,17 +157,17 @@ export const BLOG_POSTS: BlogPost[] = getBlogPosts();
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: 'Facebook',
-    url: 'https://facebook.com/vilvanadhaishwarar',
+    url: import.meta.env.VITE_FACEBOOK_URL,
     icon: 'FB',
   },
   {
     platform: 'Instagram',
-    url: 'https://instagram.com/vilvanadhaishwarar',
+    url: import.meta.env.VITE_INSTAGRAM_URL,
     icon: 'IG',
   },
   {
     platform: 'YouTube',
-    url: 'https://youtube.com/@vilvanadhishwararkovilkizh3051',
+    url: import.meta.env.VITE_YOUTUBE_URL,
     icon: 'YT',
   },
 ];
