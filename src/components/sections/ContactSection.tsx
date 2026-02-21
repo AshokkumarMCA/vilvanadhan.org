@@ -82,7 +82,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="py-24 bg-orange-400 text-white">
       <div className="container mx-auto px-4">
-        <SectionTitle>Contact Us</SectionTitle>
+        <SectionTitle>Contact Vilvanadha Ishwarar Temple - Kilvillivalam</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

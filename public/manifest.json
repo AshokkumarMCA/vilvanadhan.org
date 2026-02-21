@@ -1,0 +1,29 @@
+{
+  "name": "Sri Vilvanadha Ishwarar Temple - Kilvillivalam",
+  "short_name": "Vilvanadhan Temple",
+  "description": "Official website of Sri Vilvanadha Ishwarar Temple in Kilvillivalam, Vandavasi. Ancient Shiva temple reconstruction project.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F97316",
+  "theme_color": "#F97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/background.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/background.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["religion", "lifestyle", "social"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

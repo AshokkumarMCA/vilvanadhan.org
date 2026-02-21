@@ -5,7 +5,7 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="py-24">
       <div className="container mx-auto px-4">
-        <SectionTitle>Our Services</SectionTitle>
+        <SectionTitle>Temple Services & Puja Offerings</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SERVICES.map((service, index) => (
             <Card key={service.id} delay={index * 0.2}>
